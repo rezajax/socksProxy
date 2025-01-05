@@ -50,7 +50,7 @@ jobs:
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1.14.0
         with:
-          artifacts: baran-all.jar # اشاره به فایل JAR دانلود شده
+          artifacts: my-shadow-jar-1.0.0-all.jar # اشاره به فایل JAR دانلود شده
           token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.generate_tag.outputs.tag }}
           name: "Release ${{ steps.generate_tag.outputs.tag }}"
