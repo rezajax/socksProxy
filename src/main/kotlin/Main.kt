@@ -10,6 +10,7 @@ import java.net.ServerSocket
 
 fun main() {
     val serverSocket = ServerSocket(1122)
+    println("Server listening on port ${serverSocket.localPort}")
 
     while (true) {
         val clientSocket = serverSocket.accept()
